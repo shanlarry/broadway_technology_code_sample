@@ -18,6 +18,7 @@ class Solution {
         // s = "(a)()(()" count = 1
         // reverse -> ")(()()a("
         // flip ->    "())()(a)"
+        // technique learned from (https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)
         
         List<String> res = new ArrayList<>();
         backtrack(s, res, 0, 0, new char[] {'(', ')'});
